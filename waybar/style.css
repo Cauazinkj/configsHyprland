@@ -1,6 +1,4 @@
-/* @import "$HOME/.config/colors/colors.css" */
-@import "../colors/colors.css";
-
+/* ...existing code... */
 * {
     font-family: "JetBrainsMono Nerd Font";
     font-size: 13px;
@@ -12,11 +10,13 @@
 
 window,
 tooltip {
-    background-color: @background;
+    background-color: #0f1720;
+    /* --background */
 }
 
 #waybar {
-    background: alpha(@background, 0.6);
+    background: rgba(15, 23, 32, 0.6);
+    /* --background-60 */
     border-radius: 0;
 }
 
@@ -25,26 +25,31 @@ tooltip {
 }
 
 #workspaces button {
-    color: @foreground;
+    color: #e6edf3;
+    /* --foreground */
     border: none;
     padding: 0 5px;
 }
+
 #workspaces button:hover {
-    color: @pink;
+    color: #f5c2e7;
+    /* --pink */
     transition: none;
-    border-bottom: 1px solid @pink;
+    border-bottom: 1px solid #f5c2e7;
     padding: 0 8px;
 }
 
 #workspaces button.active {
-    color: @pink;
-    border: 2px solid @pink;
+    color: #f5c2e7;
+    /* --pink */
+    border: 2px solid #f5c2e7;
     padding: 0 8px;
     margin: 0 2px;
 }
 
 #workspaces button.urgent {
-    background-color: @red;
+    background-color: #ff6b6b;
+    /* --red */
     padding: 0 8px;
 }
 
@@ -55,7 +60,8 @@ tooltip {
 #battery,
 #pulseaudio,
 #clock {
-    color: @foreground;
+    color: #e6edf3;
+    /* --foreground */
     margin: 1px 0;
     padding: 0 10px;
 }
@@ -66,31 +72,39 @@ tooltip {
 #battery:hover,
 #pulseaudio:hover,
 #clock:hover {
-    background-color: alpha(@select, 0.6);
+    background-color: rgba(42, 42, 42, 0.6);
+    /* --select-60 */
 }
 
 #bluetooth {
-    color: @yellow;
+    color: #f6c177;
+    /* --yellow */
 }
 
 #network {
-    color: @green;
+    color: #4ade80;
+    /* --green */
 }
 
 #battery {
-    color: @purple;
+    color: #c084fc;
+    /* --purple */
 }
 
 #pulseaudio {
-    color: @orange;
+    color: #fb923c;
+    /* --orange */
 }
 
 #clock {
     margin-right: 10px;
-    color: @blue;
+    color: #89b4fa;
+    /* --blue */
 }
 
 #custom-power {
     margin-left: 10px;
     padding: 0px 10px 0 15px;
 }
+
+/* ...existing code... */

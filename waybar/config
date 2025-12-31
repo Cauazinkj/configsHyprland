@@ -1,12 +1,11 @@
 {
     "modules-left": ["custom/power", "hyprland/workspaces"],
-    // "modules-center": [],
     "modules-right": ["tray", "bluetooth", "network", "battery", "pulseaudio", "clock"],
 
     "custom/power": {
         "format" : "⭘ ",
         "tooltip": false,
-        "on-click": "wlogout -b 5",
+        "on-click": "wlogout -b 5"
     },
 
     "hyprland/workspaces": {
@@ -14,20 +13,20 @@
         "all-outputs": true,
         "warp-on-scroll": false,
         "format": "{name}",
-        "cursor": true,
+        "cursor": true
     },
 
     "tray": {
         "icon-size": 20,
         "spacing": 10,
-        "cursor": true,
+        "cursor": true
     },
 
     "bluetooth": {
         "format": " 󰂯 ",
         "format-disabled": " 󰂲 ",
         "format-connected": " 󰂱 ",
-        "on-click": "blueman-manager",
+        "on-click": "blueman-manager"
     },
 
     "network": {
@@ -35,7 +34,7 @@
         "format-ethernet": "  Ethernet",
         "format-linked": "  Linked (No IP)",
         "format-disconnected": "  Disconnected",
-        "tooltip": false,
+        "tooltip": false
     },
 
     "battery": {
@@ -51,7 +50,7 @@
         "format-alt": "{icon} {capacity}%",
         "format-icons": [" ", " ", " ", " ", " "],
         "tooltip-format": "{time}",
-        "cursor": false,
+        "cursor": false
     },
 
     "pulseaudio": {
@@ -62,9 +61,9 @@
         "format-icons": {
             "headphone": " ",
             "headset": " ",
-            "default": [" "],
+            "default": [" "]
         },
-        "on-click": "pavucontrol",
+        "on-click": "pavucontrol"
     },
 
     "clock": {
@@ -76,9 +75,9 @@
                 "months": "<span color='#F5C2E7'><b>{}</b></span>",
                 "weekdays": "<span color='#89B4FA'><b>{}</b></span>",
                 "days": "<span color='#CDD6F4'><b>{}</b></span>",
-                "today": "<span color='#F9E2AF'><b>{}</b></span>",
+                "today": "<span color='#F9E2AF'><b>{}</b></span>"
             }
         },
-        "on-click": "swaync-client -t -sw",
+        "on-click": "swaync-client -t -sw"
     }
 }

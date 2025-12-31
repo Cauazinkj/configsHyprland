@@ -1,68 +1,69 @@
+/* Waybar-safe CSS */
 * {
-  font-family: "Fira Code";
+  font-family: "JetBrains Mono Nerd Font", "Fira Code", monospace;
+  -webkit-font-smoothing: antialiased;
+  font-size: 12px;
+  color: #e6edf3;
 }
 
 #waybar {
-  background: #171717;
-  color: #fff;
+  min-height: 36px;
+  padding: 4px 8px;
+  background: rgba(20,20,22,0.6);
+  border-radius: 8px;
 }
 
-#clock {
-  color: #fff;
-}
-
-#tray {
-  padding-left: 4px;
-}
-
-#workspaces button:hover {
-  background-color: transparent;
-}
-
-#workspaces button {
-  color: #737373;
-  padding-left: 4px;
-  padding-right: 4px;
-  border-radius: 0px;
-}
-
-#workspaces button:hover {
-  background-color: #262626;
-}
-
-#workspaces button.active {
-  color: #84cc16;
-}
-
-#window {
-  color: #fff;
-}
-
-#network {
-  color: #3b82f6;
+#workspaces {
+  margin-left: 8px;
   margin-right: 8px;
 }
 
-#pulseaudio {
-  color: #14b8a6;
-  margin-right: 4px;
+#workspaces button {
+  color: #9aa7b8;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: transparent;
+  font-size: 13px;
+  margin-right: 6px;
 }
 
-#cpu {
-  color: #0ea5e9;
-  margin-right: 4px;
+#workspaces button:hover {
+  background: rgba(255,255,255,0.03);
+  color: #f5c2e7;
 }
 
-#temperature {
-  color: #eab308;
-  margin-right: 4px;
+#workspaces button.active {
+  color: #a3e635;
+  background: rgba(163,230,53,0.06);
 }
 
-#memory {
-  color: #d946ef;
-  margin-right: 4px;
+#window {
+  color: #cbd5e1;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
-#custom-powermenu {
-  color: #f43f5e;
+#tray {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+#tray .tray-item {
+  margin: 0 6px;
+}
+
+#clock {
+  color: #89b4fa;
+  padding: 0 8px;
+  border-radius: 6px;
+}
+
+.separator {
+  color: rgba(255,255,255,0.08);
+  padding: 0 6px;
+}
+
+@media (max-width: 1200px) {
+  #waybar { min-height: 32px; font-size: 12px; }
+  #workspaces button { padding: 3px 6px; margin-right: 4px; }
 }

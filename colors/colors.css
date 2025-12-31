@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @define-color background #1e1e2e;
 @define-color foreground #cdd6f4;
 @define-color select     #585b70;
@@ -10,3 +11,19 @@
 @define-color green      #a6e3a1;
 @define-color blue       #89b4fa;
 @define-color gray       #45475a;
+=======
+:root {
+    --background: #0f1720;
+    --foreground: #e6edf3;
+    --pink: #f5c2e7;
+    --select: #2a2a2a;
+    --select-60: rgba(42, 42, 42, 0.6);
+    --red: #ff6b6b;
+    --yellow: #f6c177;
+    --green: #4ade80;
+    --purple: #c084fc;
+    --orange: #fb923c;
+    --blue: #89b4fa;
+    --background-60: rgba(15, 23, 32, 0.6);
+}
+>>>>>>> b0b397c (Minhas configuracoes do Hyprland)
